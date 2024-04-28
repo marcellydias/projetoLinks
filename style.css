@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*
+  background-image: url(assets/bg-mobile.jpg);
+
+  /*a imagem não vai repetir
+  background-repeat: no-repeat;
+
+  /*centraliza a imagem no eixo x e y
+  background-position: top center;
+
+  /*cover: expande a imagem para cobrir toda tela
+  background-size: cover;
+  */
+
+  /*resumindo o código:*/
+
+  background: url(assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 360px;
+  /*o margin auto(lados) alinha o container no meio da tela*/
+  margin: 56px auto 0px;
+  padding-top: 56px;
+}
+
+/*alinha o elementos filhos do pai */
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+/*links*/
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li a {
+  display: flex;
+  /*linha horizontal*/
+  align-items: center;
+  /*linha vertical*/
+  justify-content: center;
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  /*propriedade efeito embaçado*/
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: all 0.5s;
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+}
